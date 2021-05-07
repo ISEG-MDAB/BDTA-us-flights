@@ -55,76 +55,30 @@ Data set containing a row per flight and columns:
 <i>SECURITY_DELAY</i> = Security Delay, in Minutes  
 <i>LATE_AIRCRAFT_DELAY</i> = Late Aircraft Delay, in Minutes  
 
-
-   - <b><i>title_ratings</i></b>
-
-     Data set regarding movies' ratings. For each movie, stores by column:
-        - <i>averageRating</i> : stores the average rating attributed to the movie (on a scale from 1 to 10);
-        - <i>numVotes</i> : number of votes on the corresponding movie;   
-
- link for data set download: https://datasets.imdbws.com/title.ratings.tsv.gz
- 
- <br>
-        
-   - <b><i>title_crew</i></b>
-   
-     Data set with crew information (directors and writers) per movie. Each individual is given a code, so there are no names on this data set. Columns:
-        - <i>directors</i> : codes of the directors of the movie;
-        - <i>numVotes</i> : codes of the writers of the movie;  
-     
-     On both columns, each cell can store more than one code, doing so separating codes by commas. <i>(ex: code1,code2)</i>
-     
- link for data set download: https://datasets.imdbws.com/title.crew.tsv.gz
- 
- <br>
- 
-   - <b><i>title_principals</i></b>
-   
-     Data set storing information regarding all professionals who took part on the movie
-    
-     Columns:
-        - <i>tconst</i> : movie code;
-        - <i>ordering</i> : works as an individual index for each movie. Integers starting at 1, incrementing 1 by each row while the movie code does not change.When the entire movie crew is characterized, 'tconst' column receives a new code and 'ordering' starts from 1 again;
-        - <i>nconst</i> : crew member code;
-        - <i>category</i> : stores the in which category the person works on this particular movie;
-        - <i>job</i> : stores the actual rolle of the person on the movie; (ex: 'category': cinematographer, 'job': director of photography);
-        - <i>characters</i> : For actors/actresses, stores the character(s) played on the movie. For all other crew members, '\N'. 
-
- link for data set download: https://datasets.imdbws.com/title.principals.tsv.gz
- 
- <br>
-     
-   - <b><i>name_basics</i></b>
-   
-     Data set storing information for each professional related to movies. Has as columns:
-        - <i>primaryName</i> : person's name;
-        - <i>birthYear</i> : Year in which he/she was born;
-        - <i>deathYear</i> : Year in which he/she died. If the corresponding professional is alive, stores '\N'
-        - <i>primaryProfession</i> : profession(s) related to movies;
-        - <i>knownForTitles</i> : Movie codes in which he/she worked on. Can store multiple codes, separated by commas (<i>ex: code1,code2,code3</i>).
-        
- link for data set download: https://datasets.imdbws.com/name.basics.tsv.gz
-     
 ## Project Description
 
 
 On the folder, you will find <b>7 documents: </b> 
-
-  - <b><i>ProjectStatement.pdf</i></b> : Professor's statement on the requisites of the project;
   
 
   - <b><i>README.md</i></b> : this document describing all data sets used and what was developed in the project;
   
   
-  - <b><i>data_filtering.ipynb</i></b> : a jupyter notebook to prepare and filter the data for further analysis. You can find all the code and process description on the notebook.
+  - <b><i>Complete Dataset to table.ipynb</i></b> : a jupyter notebook to load all csv files and save them on a table to use further on the analysis.
 
 
-  - <b><i>movie_ratings_visualization.ipynb</i></b> : a jupyter notebook to visualize and describe the data.
+  - <b><i>Data aggregation.ipynb</i></b> : a jupyter notebook to agragate the data and convert it to pandas DataFrame.
+
+   
+  - <b><i>Coordinates Script.ipynb</i></b> : a jupyter notebook to get the coordinates of the airports location.
+
+
+  - <b><i>Data analysis.ipynb</i></b> : a jupyter notebook to visualize and describe the data.
   
       Five different charts are presented:
       <br>
-      - Total number of movies produced by year:
-              A scatter plot with the evolution of the total number of movies produced on each year.
+      - Total number of flights per airport:
+              A scatter plot with the evolution of the total number of flights per month.
               <br>
       - Number of movies produced by year (Genre comparison):
               An interactive scatter plot that allows the user to choose two genres and analyze the evolution of     the number of movies produced by year, for the two corresponding genres.
