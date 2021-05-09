@@ -55,6 +55,8 @@ Data set containing a row per flight and columns:
 <i>SECURITY_DELAY</i> = Security Delay, in Minutes  
 <i>LATE_AIRCRAFT_DELAY</i> = Late Aircraft Delay, in Minutes  
 
+To get this dataset go to this link: https://www.transtats.bts.gov/DL_SelectFields.asp?gnoyr_VQ=FGJ&QO_fu146_anzr=b0-gvzr and select all the columns that are in the list above and download the monthly data from 2017 - 2020
+
 ## Project Description
 
 
