@@ -91,5 +91,12 @@ On the folder, you will find <b>7 documents: </b>
       <br>
       - Rate of canceled flights, delayed flights and average delay per state:
               A US Heatmap with a button to select the year and the disered metric.
-              <br>   
-             
+              <br>
+      <br>
+      - Network from the routes:
+              A network that connects all the airports using the routes on the dataset.
+              <br>               
+      <br>
+      - Map the network for the 350 routes with more flights between 2017-2020:
+              A US map with the 350 routes whit more flights on the dataset.
+              <br>    
