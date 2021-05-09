@@ -80,3 +80,16 @@ On the folder, you will find <b>7 documents: </b>
       - Total number of flights per airport:
               A scatter plot with the evolution of the total number of flights per month.
               <br>
+      <br>
+      - DataFrame with the highest and lowest numbers of flights per month:
+              A DataFrame with the 3 aiports with hights number of flighs and 3 the with the lowest number.
+              <br>
+      <br>
+      - Total number of canceled flights, delayed flights and average delay per state:
+              A US Heatmap with a button to select the year and the disered metric.
+              <br>
+      <br>
+      - Rate of canceled flights, delayed flights and average delay per state:
+              A US Heatmap with a button to select the year and the disered metric.
+              <br>   
+             
